@@ -1,0 +1,14 @@
+{
+    "username":"Manoj Kumar",
+    "password":"Passw0rd45",
+    "email": "manojkumarc2994@gmail.com",
+    "Interests": ["Java","JavaSCript","JMeter","TestNG"],
+    "Gender": "male",
+    "Hobbies": "Playing",
+    "address":{
+        "area" : "Mg road",
+        "city" : "bangalore",
+        "pincode": "560078"
+    }
+
+}

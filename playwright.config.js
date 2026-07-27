@@ -15,7 +15,7 @@ import { defineConfig, devices } from '@playwright/test';
 export default defineConfig({
   testDir: './tests',
   /* Run tests in files in parallel */
-  timeout: 20 *1000,  // timeout for everystep
+  timeout: 40 *1000,  // timeout for everystep
      expect : {
       timeout: 5000,  // timeout for every assertion
      },
@@ -25,9 +25,12 @@ export default defineConfig({
 
      use: {
       browserName: 'chromium',
-      headless:true,
+      headless:false,
       screenshot : 'on',//'only-on-failure'
-      trace : 'on',  /*use this to get screeshot only when it fails ('retain-on-failure')*/
+      trace : 'on',/*use this to get screeshot only when it fails ('retain-on-failure')*/
+     
+
+      //viewport:{width:2560,height:1080}  
      }
      
 
