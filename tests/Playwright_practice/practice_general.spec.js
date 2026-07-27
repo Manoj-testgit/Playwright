@@ -54,7 +54,8 @@ test("page scroll up and down" ,async ({page}) =>
 
 });
 
-test("Working with multiple windows windows",async({page}) =>
+test("Working with multiple windows windows",async({browser}) =>
 {
+
 
 });
