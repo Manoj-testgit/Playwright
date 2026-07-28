@@ -37,4 +37,9 @@ test("Playwright mutiple tabs", async ({browser}) =>
         page.locator("li a[href*='https://code.visualstudio.com']:visible").click()
     ])
 
+    await newPage.waitForLoadState() //waits for new page to load
+
+    await page.bringToFront() //switch to the orginal page
+
+    await newPage.close() // closes the new page 
 });

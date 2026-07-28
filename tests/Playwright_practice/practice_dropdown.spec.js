@@ -28,3 +28,17 @@ test("Testing dropdown in Rahulshetty page" , async({page}) =>
     await page.getByRole("button", {name:'Sign In'}).click();
 
 });
+
+test("Testing dropdown again" ,async ({page}) =>
+{
+
+    await page.goto("https://maestro.dev/")
+    await page.getByRole('button', { name: 'Choose download option' }).click();
+    await page.getByRole('menu', { name: 'Choose download option' }).waitForLoadState()
+    
+
+
+
+
+
+});

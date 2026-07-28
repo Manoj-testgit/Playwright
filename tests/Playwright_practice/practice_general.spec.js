@@ -56,6 +56,16 @@ test("page scroll up and down" ,async ({page}) =>
 
 test("Working with multiple windows windows",async({browser}) =>
 {
+   const context = browser.newContext()
+   const page = await context.newPage()
+
+   await page.goto("https://playwright.dev/java/")
+
+   const [newPage] = Promise.all([
+      
+    context.waitForEvent("page"),
+    page.locator("li a[href*='https://code.visualstudio.com']:visible").click()
+   ])
 
 
 });

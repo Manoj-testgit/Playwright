@@ -3,7 +3,7 @@ const { count } = require("node:console");
 const { request } = require("node:http")
 
 
-test.only("Health monitor API" , async({request}) =>
+test("Health monitor API" , async({request}) =>
 {
 
     test.setTimeout(0)//setting the timeout to 0 - no timeout 
