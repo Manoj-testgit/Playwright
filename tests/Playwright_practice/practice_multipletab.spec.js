@@ -43,3 +43,51 @@ test("Playwright mutiple tabs", async ({browser}) =>
 
     await newPage.close() // closes the new page 
 });
+
+test ("handling multiple tabs" , async({browser}) =>
+{
+    const context = await browser.newContext()
+    const page = await context.newPage()
+    
+    await page.goto("https://demo.automationtesting.in/Windows.html")
+    await page.getByRole("link",{name:"Open New Tabbed Windows"}).click()
+
+    const [newPage]= await Promise.all([
+        context.waitForEvent("page"),
+        await page.getByRole("button",{name:"click"}).click()
+
+    ])
+    await newPage.waitForLoadState()
+    const anotherPage = await context.newPage()
+    await anotherPage.goto("https://www.youtube.com/")
+
+
+});
+
+test("Muliple windows handling" , async({browser}) =>
+{
+    const context = await browser.newContext()
+    const window = await context.newPage()
+
+    await window.goto("https://demo.automationtesting.in/Windows.html")
+
+    /*await window.addLocatorHandler(window.locator('iframe[name^="aswift"]')
+    .contentFrame().locator('#ad_position_box'), async()=>
+    {
+        await window.locator('iframe[name^="aswift"]').contentFrame()
+        .getByRole('button', { name: 'Close ad' }).click();
+    });*/
+
+    await window.getByRole("link", {name:"Open New Seperate Windows"}).click()
+
+    const [newWindow] = await Promise.all([
+        context.waitForEvent("page"),
+        window.getByRole("button",{name:"click"}).click()
+
+    ])
+
+    await newWindow.waitForLoadState()
+    await newWindow.close()
+
+})
+

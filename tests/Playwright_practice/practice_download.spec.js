@@ -33,7 +33,7 @@ test("Validate the download" , async({page}) =>
 })
 
 
-test.only("Testing download and data from file", async({page}) =>
+test("Testing download and data from file", async({page}) =>
 {
     await page.goto("https://jsonlint.com/datasets")
 

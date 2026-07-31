@@ -31,3 +31,5 @@ test("Testing alerts without assertions", async ({page}) =>
     await page.getByRole("button", {name: "Confirm"}).click();
 
 });
+
+
