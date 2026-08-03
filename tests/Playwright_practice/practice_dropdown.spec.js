@@ -35,10 +35,6 @@ test("Testing dropdown again" ,async ({page}) =>
     await page.goto("https://maestro.dev/")
     await page.getByRole('button', { name: 'Choose download option' }).click();
     await page.getByRole('menu', { name: 'Choose download option' }).waitForLoadState()
-    
-
-
-
 
 
 });

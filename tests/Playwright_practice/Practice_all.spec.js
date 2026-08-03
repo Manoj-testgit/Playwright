@@ -25,7 +25,7 @@ test("Valdiate the download, assert it and read it", async({page})=>
 
 })
 
-test.only("Testing downloads, asset and read json" , async({page}) =>
+test("Testing downloads, asset and read json" , async({page}) =>
 {
     await page.goto("https://jsonlint.com/datasets")
     await page.waitForLoadState();
@@ -42,7 +42,5 @@ test.only("Testing downloads, asset and read json" , async({page}) =>
 
     const world = JSON.parse (fs.readFileSync(WorldPath))
     console.log(world)
-
-
 
 });
