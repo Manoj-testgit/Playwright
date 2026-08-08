@@ -19,7 +19,7 @@ test.beforeAll( async({browser})=>
 })
 
 
-test ('Cient App logc', async () =>
+test ('Cient App logc with session storage', async () =>
 {
     
     const page = await webContext.newPage();
@@ -107,3 +107,20 @@ test ('Cient App logc', async () =>
     expect(orderId.includes(orderIdDetails)).toBeTruthy();
 
 });
+
+/*Writng my second test here, where i can make use of login from session storage part 
+and i dont have to do the relogin again, so session storage helps in reusing the same data
+without executing them again*/
+
+test("Test cases to valdiate the session storage", async()=>
+{
+    const page = await webContext.newPage();
+    await page.goto("https://rahulshettyacademy.com/client");
+    const title = await page.title();
+    console.log (title);
+    await expect (page).toHaveTitle("Let's Shop");
+    await page.locator(".card-body b").first().waitFor(); 
+    const titles = await page.locator(".card-body b").allTextContents();
+    console.log(titles);
+
+})
