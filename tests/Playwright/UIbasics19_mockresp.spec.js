@@ -2,7 +2,9 @@ const {test,expect,request} = require("@playwright/test");
 const { ValueType } = require("exceljs");
 const loginPayLoad = {userEmail:"manojkumarc2994@gmail.com",userPassword:"Radeon 123"}
 const orderPayLoad = {orders:[{country:"Cuba",productOrderedId:"6960eac0c941646b7a8b3e68"}]}
-let token; //delcaring token here to that it can accessed everywhere
+const mockPayloadorders = {data:[],"message":"No Orders"};
+
+let token; 
 let orderId;
 test.beforeAll( async()=>
 {
@@ -14,14 +16,11 @@ test.beforeAll( async()=>
         }
     )
     expect(loginResponse.ok()).toBeTruthy();
-    //success codes for api - 200,201, 202 etc
     const loginResponsejson = await loginResponse.json();
     token = loginResponsejson.token;
-    //const statuscode = loginResponsejson.
     console.log(token);
-    //
 
-    //Create order api
+
     const orderResponse = await apiContext.post("https://rahulshettyacademy.com/api/ecom/order/create-order",
     {
         data:orderPayLoad,
@@ -37,7 +36,7 @@ test.beforeAll( async()=>
 });
 
 
-test ('Cient App logc with API', async ({page}) =>{
+test ('Cient App logc with API mock response', async ({page}) =>{
     
     const products = page.locator(".card-body");
     const productName = "ZARA COAT 3";
@@ -49,24 +48,28 @@ test ('Cient App logc with API', async ({page}) =>{
 
     await page.goto("https://rahulshettyacademy.com/client")
     
-    await page.locator("button[routerlink*='myorders']").first().click();
-    await expect (page.locator("h1.ng-star-inserted")).toHaveText("Your Orders");
-    await page.locator("tbody").waitFor();
-
-    const rows = page.locator("tbody tr");
-
-
-    for (let i=0; i<await rows.count(); i++)
+    await page.route("https://rahulshettyacademy.com/api/ecom/order/get-orders-for-customer/6a2013f417ee3e78bab644d9",
+    //^ calling the URL for which we want to route - first argument 
+    //how to route follow below - second argument 
+    async route=>
     {
-        const roworderId = await rows.nth(i).locator ("th").textContent();
-        if (orderId.includes(roworderId))
+       const response = await page.request.fetch(route.request())
+       let body = JSON.stringify(mockPayloadorders); //using stringyfy to make JS object into JSON object
+       route.fulfill(
         {
-            await rows.nth(i).locator("button").first().click();
-            break;
+            response,
+            body,
         }
-    }
-    const orderIdDetails = await page.locator(".col-text").textContent();
-    expect(orderId.includes(orderIdDetails)).toBeTruthy();
+       )
+        //intercepting the response - api response ->{mock/fake response}-> browser - render data on front
+
+    })
+    await page.locator("button[routerlink*='myorders']").first().click();
+    //await expect (page.locator("h1.ng-star-inserted")).toHaveText("Your Orders");
+    //await page.locator("tbody").waitFor();
+
+    //const rows = page.locator("tbody tr");
+    await page.pause()
 
 
 });
