@@ -1,4 +1,6 @@
-test('@QW Security test request intercept or mock request', async ({ page }) => {
+const {test,expect} = require("@playwright/test")
+
+test('will update this test case', async ({ page }) => {
  
     //login and reach orders page
     await page.goto("https://rahulshettyacademy.com/client");
