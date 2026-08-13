@@ -16,6 +16,11 @@ exports.customtest = base.test.extend(
             await page.locator("[value='Login']").click();
             await page.waitForLoadState('networkidle');
             await use(page);
+            //whatever we wrtite use parameter will the execution above it is executed 
+            // tear down
+            await context.close()
+            //^ ends all the threads running 
+
         },
 
         createOrder: async ({ }, use) => {
@@ -23,6 +28,7 @@ exports.customtest = base.test.extend(
             const apiUtils = new ApiUtils(apiContext, loginPayLoad);
             const response = await apiUtils.createOrder(orderPayLoad);
             await use(response)
+            await apiContext.dispose()//tear down 
 
         },
 
