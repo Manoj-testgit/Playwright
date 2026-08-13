@@ -12,6 +12,7 @@ exports.customtest = base.test.extend(
             await page.goto("https://rahulshettyacademy.com/client");
             await page.locator("#userEmail").fill("manojkumarc2994@gmail.com");
             await page.locator("#userPassword").fill("Radeon 123");
+            await page.waitForLoadState('networkidle');
             await page.locator("[value='Login']").click();
             await page.waitForLoadState('networkidle');
             await use(page);
@@ -22,6 +23,12 @@ exports.customtest = base.test.extend(
             const apiUtils = new ApiUtils(apiContext, loginPayLoad);
             const response = await apiUtils.createOrder(orderPayLoad);
             await use(response)
+
+        },
+
+        testDataForOrder :{
+
+            productName: "ADIDAS ORIGINAL"
 
         }
     })
