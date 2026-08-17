@@ -1,0 +1,7 @@
+class LoginPageP
+{
+    construction(page)
+    {
+        this.signInbutton = page.locator("[value='Login']")
+    }
+}

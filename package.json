@@ -12,6 +12,7 @@
   },
   "scripts": {},
   "dependencies": {
+    "@cucumber/cucumber": "^13.2.1",
     "exceljs": "^4.4.0",
     "xmlchars": "^2.2.0"
   },
