@@ -1,28 +1,24 @@
 const { test, expect } = require("@playwright/test")
-
+const {loginPageP, LoginPageP} = require('../../pageObjectspractice/LoginPageP')
 
 test ('Cient App logc', async ({page}) =>{
     
+    const username = "manojkumarc2994@gmail.com"
+    const password = "Radeon 123"
     const products = page.locator(".card-body");
     const productName = "ZARA COAT 3";
-
-    await page.goto("https://rahulshettyacademy.com/client");
-    const title = await page.title();
-    console.log (title);
-    await expect (page).toHaveTitle("Let's Shop");
-
-    await page.locator('#userEmail').fill("manojkumarc2994@gmail.com");
-    await page.locator('#userPassword').fill("Radeon 123");
-    await page.locator("[value='Login']").click();
-    await page.waitForLoadState('networkidle');  // wait for the page to load
-    await page.locator(".card-body b").first().waitFor(); /*sometimes the above conditions may
-    not work so another wait condition for atleast 1st item to load*/
+    const loginPageP = new LoginPageP(page)
+    loginPageP.goTo();
+    loginPageP.validLogin(username,password)
+   
+    await page.waitForLoadState('networkidle'); 
+    await page.locator(".card-body b").first().waitFor(); 
 
     const titles = await page.locator(".card-body b").allTextContents();
     console.log(titles);
 
     const count = await products.count();
-    for (let i=0; i<count; i++ ) //logic to find the item
+    for (let i=0; i<count; i++ ) 
     {
         if (await products.nth(i).locator("b").textContent() === productName) //checking for item with productname
         {
@@ -32,16 +28,13 @@ test ('Cient App logc', async ({page}) =>{
         }
     }
 
-    await page.locator("[routerlink$='/dashboard/cart']").click(); //
+    await page.locator("[routerlink$='/dashboard/cart']").click(); 
     await page.locator("div li").first().waitFor();
-    const bool = await page.locator("h3:has-text('ZARA COAT 3')").isVisible(); //used tag h3 with the text to identify the product
-    /*isVisible wont wait for page to load so we are using waitfor above */
+    const bool = await page.locator("h3:has-text('ZARA COAT 3')").isVisible(); 
     expect (bool).toBeTruthy();
-    await page.locator("text=Checkout").click(); //using generic text for checkout
+    await page.locator("text=Checkout").click(); 
 
-    await page.locator("[placeholder*='Country']").pressSequentially("ind");/* press sequentially
-    is used to type in the less in order to get the sorting list, delay of 150 ms is introduced
-    between each key press */
+    await page.locator("[placeholder*='Country']").pressSequentially("ind");
     const dropdown = page.locator(".ta-results");
     await dropdown.waitFor();
     const optionsCount = await dropdown.locator("button").count();
