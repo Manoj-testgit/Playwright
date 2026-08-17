@@ -1,5 +1,6 @@
 const { test, expect } = require("@playwright/test")
-const {loginPageP, LoginPageP} = require('../../pageObjectspractice/LoginPageP')
+const {LoginPageP} = require('../../pageObjectspractice/LoginPageP')
+const {DashboardPageP} = require('../../pageObjectspractice/DashboardPageP')
 
 test ('Cient App logc', async ({page}) =>{
     
@@ -8,27 +9,13 @@ test ('Cient App logc', async ({page}) =>{
     const products = page.locator(".card-body");
     const productName = "ZARA COAT 3";
     const loginPageP = new LoginPageP(page)
-    loginPageP.goTo();
-    loginPageP.validLogin(username,password)
-   
-    await page.waitForLoadState('networkidle'); 
-    await page.locator(".card-body b").first().waitFor(); 
-
-    const titles = await page.locator(".card-body b").allTextContents();
-    console.log(titles);
-
-    const count = await products.count();
-    for (let i=0; i<count; i++ ) 
-    {
-        if (await products.nth(i).locator("b").textContent() === productName) //checking for item with productname
-        {
-            await products.nth(i).locator("text= Add To Cart").click();// after finding item, adding it to the card 
-            break;
-
-        }
-    }
-
-    await page.locator("[routerlink$='/dashboard/cart']").click(); 
+    await loginPageP.goTo();
+    await loginPageP.validLogin(username,password)
+    const dashboardPageP = new DashboardPageP(page)
+    await dashboardPageP.searchProductAddCart(productName)
+    await dashboardPageP.navigateToCart()
+    
+    
     await page.locator("div li").first().waitFor();
     const bool = await page.locator("h3:has-text('ZARA COAT 3')").isVisible(); 
     expect (bool).toBeTruthy();

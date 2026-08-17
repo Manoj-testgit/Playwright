@@ -17,6 +17,8 @@ async validLogin(username,password)
     await this.userName.fill("manojkumarc2994@gmail.com");
     await this.password.fill("Radeon 123");
     await this.signInbutton.click();
+    await this.page.waitForLoadState('networkidle'); 
+
 }
 
 }
