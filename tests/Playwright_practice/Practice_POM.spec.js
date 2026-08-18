@@ -1,6 +1,8 @@
 const { test, expect } = require("@playwright/test")
 const {LoginPageP} = require('../../pageObjectspractice/LoginPageP')
 const {DashboardPageP} = require('../../pageObjectspractice/DashboardPageP')
+const {CartPageP} = require('../../pageObjectspractice/CartPageP')
+const {POManager} = require('../../pageObjectspractice/POManager')
 
 test ('Cient App logc', async ({page}) =>{
     
@@ -8,18 +10,18 @@ test ('Cient App logc', async ({page}) =>{
     const password = "Radeon 123"
     const products = page.locator(".card-body");
     const productName = "ZARA COAT 3";
+
     const loginPageP = new LoginPageP(page)
     await loginPageP.goTo();
     await loginPageP.validLogin(username,password)
+
     const dashboardPageP = new DashboardPageP(page)
     await dashboardPageP.searchProductAddCart(productName)
     await dashboardPageP.navigateToCart()
-    
-    
-    await page.locator("div li").first().waitFor();
-    const bool = await page.locator("h3:has-text('ZARA COAT 3')").isVisible(); 
-    expect (bool).toBeTruthy();
-    await page.locator("text=Checkout").click(); 
+
+    const cartPageP = new CartPageP(page, productName)
+    await cartPageP.checkOutitem(productName)
+     
 
     await page.locator("[placeholder*='Country']").pressSequentially("ind");
     const dropdown = page.locator(".ta-results");
