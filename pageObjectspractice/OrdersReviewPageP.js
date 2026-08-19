@@ -14,8 +14,6 @@ class OrdersReviewPageP
         this.name = page.locator(".field .input.txt").nth (2)
         this.orderId = this.page.locator(".em-spacer-1 .ng-star-inserted")
 
-
-
     }
 
 
@@ -47,18 +45,18 @@ class OrdersReviewPageP
         
         
             await expect (this.emailId).toHaveText("manojkumarc2994@gmail.com");
-            await this.submit.click();
-
+            
     }
 
-        
     async orderconfimationPage()
     {
-
+            await this.submit.click();
             await expect (this.orderconfimation).toHaveText(" Thankyou for the order. ");
-            this.orderId.textContent();
-            console.log(this.orderId);
 
+    }
+    async getorderId()
+    {
+        return await this.orderId.textContent()
     }
 
 }

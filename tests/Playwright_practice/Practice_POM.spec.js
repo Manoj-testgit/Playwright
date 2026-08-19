@@ -2,7 +2,7 @@ const { test, expect } = require("@playwright/test")
 
 const {POManager} = require('../../pageObjectspractice/POManager')
 
-test ('Cient App logc', async ({page}) =>{
+test.only ('Cient App logc', async ({page}) =>{
 
     const poManager = new POManager(page);
     
@@ -24,31 +24,16 @@ test ('Cient App logc', async ({page}) =>{
     const cartPageP = poManager.getCartPageP()
     await cartPageP.checkOutitem(productName)
 
-    const ordersReviewPageP = poManager.getOrderReviewsPage()
+    const ordersReviewPageP = poManager.getOrdersReviewsPage()
     await ordersReviewPageP.searchcountrycodeanselect(countryCode,countryName)
     await ordersReviewPageP.orderconfimationPage()
-    
-    const orderId = await page.locator(".em-spacer-1 .ng-star-inserted").textContent();
 
     
-    await page.locator("button[routerlink*='myorders']").first().click();
-    await expect (page.locator("h1.ng-star-inserted")).toHaveText("Your Orders");
-    await page.locator("tbody").waitFor();
+    const orderId = await ordersReviewPageP.getorderId()
+    console.log(orderId)
 
-    const rows = page.locator("tbody tr");
-
-
-    for (let i=0; i<await rows.count(); i++)
-    {
-        const roworderId = await rows.nth(i).locator ("th").textContent();
-        if (orderId.includes(roworderId))
-        {
-            await rows.nth(i).locator("button").first().click();
-            break;
-        }
-    }
-    const orderIdDetails = await page.locator(".col-text").textContent();
-    expect(orderId.includes(orderIdDetails)).toBeTruthy();
+    const orderHistoryPageP = poManager.getOrdersHistoryPage()
+    await orderHistoryPageP.orderPlaced(orderId)
 
 
 
