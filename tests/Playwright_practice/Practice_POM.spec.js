@@ -10,6 +10,8 @@ test ('Cient App logc', async ({page}) =>{
     const password = "Radeon 123"
     const products = page.locator(".card-body");
     const productName = "ZARA COAT 3";
+    const countryCode = "ind"
+    const countryName = "India"
 
     const loginPageP = poManager.getLoginPageP()
     await loginPageP.goTo();
@@ -21,41 +23,13 @@ test ('Cient App logc', async ({page}) =>{
 
     const cartPageP = poManager.getCartPageP()
     await cartPageP.checkOutitem(productName)
-     
 
-    await page.locator("[placeholder*='Country']").pressSequentially("ind");
-    const dropdown = page.locator(".ta-results");
-    await dropdown.waitFor();
-    const optionsCount = await dropdown.locator("button").count();
+    const ordersReviewPageP = poManager.getOrderReviewsPage()
+    await ordersReviewPageP.searchcountrycodeanselect(countryCode,countryName)
+    await ordersReviewPageP.orderconfimationPage()
     
-    for (let i=0;i<optionsCount;i++)
-        {
-            const text = await dropdown.locator("button").nth(i).textContent();
-            if (text === " India")
-            {
-                await dropdown.locator("button").nth(i).click();
-                break;
-            }
-
-        }
-
-    //await page.locator(".icon-credit-card").click(); //did not worl=k
-
-    //await page.locator(".input.ddl").nth(0).selectOption("4");
-    //await page.locator(".input.ddl").nth(1).selectOption("15");
-
-
-    await page.locator(".field.small .input.txt").first().fill("345");
-    await page.locator(".field .input.txt").nth (2).fill("Manoj Kumar");
-
-
-    await expect (page.locator(".user__name [type='text']").first()).toHaveText("manojkumarc2994@gmail.com");
-    await page.locator(".action__submit").click();
-    await expect (page.locator(".hero-primary")).toHaveText(" Thankyou for the order. ");
     const orderId = await page.locator(".em-spacer-1 .ng-star-inserted").textContent();
 
-    console.log(orderId);
-    
     
     await page.locator("button[routerlink*='myorders']").first().click();
     await expect (page.locator("h1.ng-star-inserted")).toHaveText("Your Orders");
