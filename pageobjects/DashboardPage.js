@@ -11,9 +11,6 @@ class DashboardPage
 
 async searchProductAddtoCart(productName)
 {
-
-
-
     const titles = await this.productsText.allTextContents();
     console.log(titles);
 

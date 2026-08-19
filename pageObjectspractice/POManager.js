@@ -1,28 +1,38 @@
-const {LoginPage} = require('../pageobjects/LoginPage');
-const {DashboardPage} = require('../pageobjects/DashboardPage');
-const {CartPage} = require('../pageobjects/CartPage');
-const {OrdersReviewPage} = require('../pageobjects/OrdersReviewPage');
-const {Orderplacedandhistory} = require('../pageobjects/Orderplaced-history');
+const {LoginPageP} = require('../pageObjectspractice/LoginPageP')
+const {DashboardPageP} = require('../pageObjectspractice/DashboardPageP')
+const {CartPageP} = require('../pageObjectspractice/CartPageP');
+const { test, expect } = require("@playwright/test")
 
-class PoManager
+
+
+class POManager
 {
-    constructor()
+    constructor(page)
     {
-            this.loginPage = new LoginPage(page);
-            this.dashboardPage = new DashboardPage (page);
+        this.page = page;
+        this.loginPageP = new LoginPageP(this.page);
+        this.dashboardPageP = new DashboardPageP (this.page);
+        this.cartPageP = new CartPageP(this.page);
 
     }
-}
 
-getLoginPage()
+
+getLoginPageP()
 {
-    return this.loginPage;
+    return this.loginPageP;
 }
 
-getDashboardPage()
+getDashboardPageP()
 {
-    return this.dashboardPage;
+    return this.dashboardPageP;
 }
 
+getCartPageP()
+{
+    return this.cartPageP;
+}
+}
+
+module.exports = {POManager}
 
 

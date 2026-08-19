@@ -1,20 +1,20 @@
 const {test,expect} = require("@playwright/test")
 class CartPageP
 {
-    constructor(page,productName)
+    constructor(page)
     {
         this.page = page;
         this.cartProducts = page.locator("div li").first()
-        this.selectedProduct = page.locator("h3:has-text('"+productName+"')")
         this.checkOut = page.locator("text=Checkout")
-        
+
     }
 
 
-    async checkOutitem(productNme)
+    async checkOutitem(productName)
     {
         await this.cartProducts.waitFor();
-        const bool = await this.selectedProduct.isVisible(); 
+        const selectedProduct = this.page.locator("h3:has-text('"+productName+"')")
+        const bool = await selectedProduct.isVisible();
         expect (bool).toBeTruthy();
         await this.checkOut.click(); 
 
