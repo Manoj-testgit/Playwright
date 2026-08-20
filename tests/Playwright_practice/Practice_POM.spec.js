@@ -28,13 +28,10 @@ test.only ('Cient App logc', async ({page}) =>{
     await ordersReviewPageP.searchcountrycodeanselect(countryCode,countryName)
     await ordersReviewPageP.orderconfimationPage()
 
-    
     const orderId = await ordersReviewPageP.getorderId()
     console.log(orderId)
 
     const orderHistoryPageP = poManager.getOrdersHistoryPage()
     await orderHistoryPageP.orderPlaced(orderId)
-
-
 
 });
