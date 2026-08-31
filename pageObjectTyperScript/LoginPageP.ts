@@ -1,0 +1,32 @@
+import { Locator, Page } from "@playwright/test";
+export class LoginPageP
+{
+    signInbutton: Locator
+    userName: Locator
+    password: Locator
+    page: Page
+
+    constructor(page: Page)
+    {
+        this.page = page;
+        this.signInbutton = page.locator("[value='Login']");
+        this.userName = page.locator('#userEmail');
+        this.password = page.locator('#userPassword');
+    }
+async goTo()
+{
+    await this.page.goto("https://rahulshettyacademy.com/client");
+}
+
+async validLogin(username:any,password:any)
+{
+    await this.userName.fill("manojkumarc2994@gmail.com");
+    await this.password.fill("Radeon 123");
+    await this.signInbutton.click();
+    await this.page.waitForLoadState('networkidle'); 
+
+}
+
+}
+
+module.exports = {LoginPageP}
