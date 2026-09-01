@@ -1,8 +1,10 @@
-//This is continued version with data from exernal json files
-const { test, expect } = require("@playwright/test")
-const dataSetP = (JSON.parse (JSON.stringify(require("../../utils/placeorderPracticedata.json"))));
+import {test,expect} from '@playwright/test'
+const dataSetP = (JSON.parse (JSON.stringify(require("../../utils/placeorderPracticedata.json"))))
 
-const {POManager} = require('../../pageObjectspractice/POManager')
+import {POManager} from "../../pageObjectTyperScript/POManager"
+
+    //Basically in playwright we have to declare all the return type 
+
 
 test ('Cient App logc', async ({page}) =>{
 
