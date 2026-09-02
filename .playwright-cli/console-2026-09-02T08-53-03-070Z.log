@@ -1,0 +1,125 @@
+[     313ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://vinothqaacademy.com/multiple-windows/:0
+[     314ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://vinothqaacademy.com/multiple-windows/:0
+[     314ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://vinothqaacademy.com/multiple-windows/:0
+[     362ms] [LOG] [LiteSpeed] Start Lazy Load @ https://vinothqaacademy.com/multiple-windows/:597
+[     363ms] [LOG] [LiteSpeed] Start Lazy Load @ https://vinothqaacademy.com/multiple-windows/:599
+[     363ms] [LOG] [LiteSpeed] Start Lazy Load @ https://vinothqaacademy.com/multiple-windows/:601
+[     364ms] [LOG] [LiteSpeed] Start Lazy Load @ https://vinothqaacademy.com/multiple-windows/:603
+[     364ms] [LOG] [LiteSpeed] Start Lazy Load @ https://vinothqaacademy.com/multiple-windows/:681
+[     640ms] [LOG] [] @ https://vinothqaacademy.com/multiple-windows/:597
+[   47564ms] [LOG] [LiteSpeed] Start Load JS Delayed @ https://vinothqaacademy.com/multiple-windows/:597
+[   47565ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   47566ms] [LOG] [LiteSpeed] Start Load JS Delayed @ https://vinothqaacademy.com/multiple-windows/:599
+[   47566ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   47566ms] [LOG] [LiteSpeed] Start Load JS Delayed @ https://vinothqaacademy.com/multiple-windows/:601
+[   47566ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   47568ms] [LOG] [LiteSpeed] Start Load JS Delayed @ https://vinothqaacademy.com/multiple-windows/:603
+[   47568ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   47571ms] [LOG] [LiteSpeed] Start Load JS Delayed @ https://vinothqaacademy.com/multiple-windows/:597
+[   47571ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   47572ms] [LOG] [LiteSpeed] Start Load JS Delayed @ https://vinothqaacademy.com/multiple-windows/:599
+[   47572ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   47573ms] [LOG] [LiteSpeed] Start Load JS Delayed @ https://vinothqaacademy.com/multiple-windows/:601
+[   47573ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   47574ms] [LOG] [LiteSpeed] Start Load JS Delayed @ https://vinothqaacademy.com/multiple-windows/:603
+[   47574ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   47576ms] [LOG] [LiteSpeed] Start Load JS Delayed @ https://vinothqaacademy.com/multiple-windows/:597
+[   47576ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   47577ms] [LOG] [LiteSpeed] Start Load JS Delayed @ https://vinothqaacademy.com/multiple-windows/:599
+[   47577ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   47578ms] [LOG] [LiteSpeed] Start Load JS Delayed @ https://vinothqaacademy.com/multiple-windows/:601
+[   47578ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   47578ms] [LOG] [LiteSpeed] Start Load JS Delayed @ https://vinothqaacademy.com/multiple-windows/:603
+[   47578ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   47581ms] ReferenceError: NewTab is not defined
+    at HTMLButtonElement.onclick (https://vinothqaacademy.com/multiple-windows/:600:149)
+[   47579ms] [LOG] [LiteSpeed] Start Load JS Delayed @ https://vinothqaacademy.com/multiple-windows/:597
+[   47580ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   47580ms] [LOG] [LiteSpeed] Start Load JS Delayed @ https://vinothqaacademy.com/multiple-windows/:599
+[   47580ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   47581ms] [LOG] [LiteSpeed] Start Load JS Delayed @ https://vinothqaacademy.com/multiple-windows/:601
+[   47581ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   47581ms] [LOG] [LiteSpeed] Start Load JS Delayed @ https://vinothqaacademy.com/multiple-windows/:603
+[   47581ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   47586ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   47587ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   47588ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   47588ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   47590ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   47591ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   47591ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   47592ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   47592ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   47592ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   47594ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   47611ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   47957ms] [LOG] JQMIGRATE: Migrate is installed, version 3.4.1 @ https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:1
+[   47977ms] ReferenceError: elementorFrontendConfig is not defined
+    at 8309 (https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2885:26062)
+    at __webpack_require__ (https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2832:170)
+    at 7603 (https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2885:20017)
+    at __webpack_require__ (https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2832:170)
+    at https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2885:32074
+    at __webpack_require__.O (https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2832:540)
+    at https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2885:32093
+    at webpackJsonpCallback (https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2832:5497)
+    at https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2885:91
+[   47977ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   47978ms] [LOG] JQMIGRATE: Migrate plugin loaded multiple times @ https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:1
+[   47978ms] [LOG] JQMIGRATE: Migrate is installed, version 3.4.1 @ https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:1
+[   47980ms] [INFO] fancyBox already initialized @ https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:86
+[   47983ms] ReferenceError: elementorFrontendConfig is not defined
+    at 8309 (https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2885:26062)
+    at __webpack_require__ (https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2832:170)
+    at 7603 (https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2885:20017)
+    at __webpack_require__ (https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2832:170)
+    at https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2885:32074
+    at __webpack_require__.O (https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2832:540)
+    at https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2885:32093
+    at webpackJsonpCallback (https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2832:5497)
+    at https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2885:91
+[   47988ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   47990ms] [LOG] JQMIGRATE: Migrate plugin loaded multiple times @ https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:1
+[   47990ms] [LOG] JQMIGRATE: Migrate is installed, version 3.4.1 @ https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:1
+[   47991ms] [INFO] fancyBox already initialized @ https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:86
+[   47994ms] ReferenceError: elementorFrontendConfig is not defined
+    at 8309 (https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2885:26062)
+    at __webpack_require__ (https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2832:170)
+    at 7603 (https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2885:20017)
+    at __webpack_require__ (https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2832:170)
+    at https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2885:32074
+    at __webpack_require__.O (https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2832:540)
+    at https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2885:32093
+    at webpackJsonpCallback (https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2832:5497)
+    at https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2885:91
+[   47994ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   47994ms] [LOG] JQMIGRATE: Migrate plugin loaded multiple times @ https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:1
+[   47994ms] [LOG] JQMIGRATE: Migrate is installed, version 3.4.1 @ https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:1
+[   47997ms] [INFO] fancyBox already initialized @ https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:86
+[   47999ms] ReferenceError: elementorFrontendConfig is not defined
+    at 8309 (https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2885:26062)
+    at __webpack_require__ (https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2832:170)
+    at 7603 (https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2885:20017)
+    at __webpack_require__ (https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2832:170)
+    at https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2885:32074
+    at __webpack_require__.O (https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2832:540)
+    at https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2885:32093
+    at webpackJsonpCallback (https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2832:5497)
+    at https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:2885:91
+[   47999ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   48021ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   48023ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   48026ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   48032ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   48034ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   48035ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   48037ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   48062ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   48064ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   48065ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   48067ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   48068ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   48069ms] [LOG] [LiteSpeed] Load  JSHandle@node @ https://vinothqaacademy.com/multiple-windows/:681
+[   48070ms] [LOG] JQMIGRATE: Migrate plugin loaded multiple times @ https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:1
+[   48070ms] [LOG] JQMIGRATE: Migrate is installed, version 3.4.1 @ https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:1
+[   48071ms] [INFO] fancyBox already initialized @ https://vinothqaacademy.com/wp-content/litespeed/js/931e3ad72b8c7f9f3d9d523fb6aa3d56.js?ver=8e6f8:86

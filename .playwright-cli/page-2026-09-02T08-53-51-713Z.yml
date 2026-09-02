@@ -1,0 +1,121 @@
+- generic [ref=e1]:
+  - text: 
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e6]:
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - link "" [ref=e11] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/vinothrk/
+          - listitem [ref=e13]:
+            - link "" [ref=e14] [cursor=pointer]:
+              - /url: https://wa.me/447459919437
+          - listitem [ref=e16]:
+            - link "" [ref=e17] [cursor=pointer]:
+              - /url: https://www.youtube.com/@vinothqaacademy
+          - listitem [ref=e19]:
+            - link "" [ref=e20] [cursor=pointer]:
+              - /url: https://www.instagram.com/vtechsolutionsuk/
+        - list [ref=e23]:
+          - listitem [ref=e24]:
+            - generic [ref=e25]: 
+            - text: "+44-7459919437 (UK- WhatsApp & Direct Call) | +91-6383544892 (India - WhatsApp Only) | Email Id : vinothtechsolutions@gmail.com"
+      - generic [ref=e28]:
+        - link [ref=e31] [cursor=pointer]:
+          - /url: https://vinothqaacademy.com/
+          - img "Vinoth Tech Solutions" [ref=e32]
+        - text: 
+        - list [ref=e36]:
+          - listitem [ref=e37]:
+            - link "Home" [ref=e38] [cursor=pointer]:
+              - /url: https://vinothqaacademy.com/
+          - listitem [ref=e39]:
+            - link "Tutorials" [ref=e40] [cursor=pointer]:
+              - /url: https://vinothqaacademy.com/tutorials/
+          - listitem [ref=e41]:
+            - generic [ref=e42]: Free Complete QA Video Courses
+          - listitem [ref=e43]:
+            - generic [ref=e44]: About Me
+          - listitem [ref=e45]:
+            - generic [ref=e46]: Demo Sites
+    - generic [ref=e49]:
+      - generic [ref=e50]: Have a question?
+      - generic [ref=e52]:
+        - textbox "Enter your name" [ref=e54]
+        - textbox "Enter Your Email" [ref=e56]
+        - textbox "Enter Your Message" [ref=e58]
+      - link "Send enquiry" [ref=e60] [cursor=pointer]:
+        - /url: "#"
+      - generic [ref=e61]:
+        - text: Message sent
+        - link "Close" [ref=e62] [cursor=pointer]:
+          - /url: "#"
+    - generic [ref=e66]:
+      - heading "Multiple Windows" [level=2] [ref=e79]
+      - generic [ref=e89]:
+        - button "New Browser Window" [ref=e95] [cursor=pointer]
+        - button "New Browser Tab" [active] [ref=e101] [cursor=pointer]
+        - button "New Message Window" [ref=e107] [cursor=pointer]
+        - link "New Browser Tab Link" [ref=e113] [cursor=pointer]:
+          - /url: https://vinothqaacademy.com/webtable/
+  - contentinfo [ref=e114]:
+    - generic [ref=e118]:
+      - generic [ref=e119]: "© 2025 V-Tech Solutions Ltd (UK), Reg. No: 16489105"
+      - generic [ref=e123]:
+        - list [ref=e127]:
+          - listitem [ref=e128]:
+            - link "" [ref=e129] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/vinothrk/
+          - listitem [ref=e131]:
+            - link "" [ref=e132] [cursor=pointer]:
+              - /url: https://wa.me/447459919437
+          - listitem [ref=e134]:
+            - link "" [ref=e135] [cursor=pointer]:
+              - /url: https://www.youtube.com/@vinothqaacademy
+          - listitem [ref=e137]:
+            - link "" [ref=e138] [cursor=pointer]:
+              - /url: https://www.instagram.com/vtechsolutionsuk/
+        - generic:
+          - list
+  - generic [ref=e143]:
+    - generic [ref=e144]:
+      - generic [ref=e145]: Sign In
+      - generic [ref=e147]:
+        - textbox "Enter email or username" [ref=e149]
+        - textbox "Enter password" [ref=e151]
+      - generic [ref=e153]:
+        - textbox "Enter your email" [ref=e155]
+        - textbox "Enter username" [ref=e157]
+        - generic [ref=e158]:
+          - textbox "Enter password" [ref=e159]
+          - text: The password must have a minimum of 8 characters of numbers and letters, contain at least 1 capital letter
+        - textbox "Repeat password" [ref=e161]
+      - generic [ref=e162]:
+        - generic [ref=e163]:
+          - checkbox [ref=e165]
+          - text: Remember me
+        - link "Sign In" [ref=e166] [cursor=pointer]:
+          - /url: "#"
+        - link "Sign Up" [ref=e167] [cursor=pointer]:
+          - /url: "#"
+    - generic [ref=e168]:
+      - generic [ref=e169]: Restore password
+      - textbox "Enter your email" [ref=e173]
+      - link "Send reset link" [ref=e175] [cursor=pointer]:
+        - /url: "#"
+    - generic [ref=e176]:
+      - generic [ref=e177]: Password reset link sent to your email
+      - link "Close" [ref=e178] [cursor=pointer]:
+        - /url: "#"
+    - generic [ref=e179]:
+      - text: Confirmation link sent Please follow the instructions sent to your email address
+      - link "Close" [ref=e180] [cursor=pointer]:
+        - /url: "#"
+    - generic [ref=e182]:
+      - generic [ref=e183]:
+        - text: No account?
+        - link "Sign Up" [ref=e184] [cursor=pointer]:
+          - /url: "#"
+        - link "Sign In" [ref=e185] [cursor=pointer]:
+          - /url: "#"
+      - text: Lost Password?
