@@ -44,7 +44,7 @@ test("Login with API with page load and calling back", async({page}) =>
 
 })
 
-test.only("Login with API with page load",async ({page}) =>
+test("Login with API with page load",async ({page}) =>
 {
     const apicontext = await request.newContext();
     const loginresponse = await apicontext.post("https://rahulshettyacademy.com/api/ecom/auth/login",

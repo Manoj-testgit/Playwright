@@ -1,7 +1,7 @@
-const {test,expect} = require ("@playwright/test")
-const fs = require("fs")
-const path = require("path")
-const os = require("os")
+import {test,expect} from "@playwright/test"
+import fs from "fs"
+import path from "path"
+import os from "os"
 
 
 
@@ -14,13 +14,11 @@ test("testing download and read the file", async ({page}) =>
         page.locator("button").filter({hasText:"Download"}).first().click()
     ])
 
-    const custompath = path.join(os.homedir(),'Downloads',"worldairport.json")
+    const custompath:string = path.join(os.homedir(),'Downloads',"worldairport.json")
     await download.saveAs(custompath)
 
     expect(fs.existsSync(custompath)).toBeTruthy()
 
-    const data = JSON.parse(fs.readFileSync(custompath))
+    const data = JSON.parse(fs.readFileSync(custompath, "utf-8"))
     console.log(data)
-
-
 });
