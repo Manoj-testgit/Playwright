@@ -1,6 +1,9 @@
-const { test, expect, request } = require("@playwright/test")
+import { test, expect, request } from "@playwright/test"
+
+declare const window: any;
+
 const loginPayload = {userEmail:"manojkumarc2994@gmail.com",userPassword:"Radeon 123"}
-let token; 
+let token: any; 
 test.beforeAll( async()=>
 {
     const apiContext = await request.newContext()
@@ -45,7 +48,10 @@ test ('Cient App logc', async ({page}) =>{
     await expect (page.locator(".user__name [type='text']").first()).toHaveText("manojkumarc2994@gmail.com");
     await page.getByText("PLACE ORDER").click();
     await expect (page.getByText(" Thankyou for the order. ")).toBeVisible();
-    const orderId = await page.locator(".em-spacer-1 .ng-star-inserted").textContent();
+    let orderId: any
+     orderId = await page.locator(".em-spacer-1 .ng-star-inserted").textContent();
+
+    expect(orderId).not.toBeNull();
 
     console.log(orderId);
     
@@ -56,7 +62,7 @@ test ('Cient App logc', async ({page}) =>{
 
     const rows = page.locator("tbody tr");
 
-
+    
     for (let i=0; i<await rows.count(); i++)
     {
         const roworderId = await rows.nth(i).locator ("th").textContent();
