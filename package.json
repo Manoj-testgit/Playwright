@@ -10,7 +10,12 @@
   "directories": {
     "test": "tests"
   },
-  "scripts": {},
+  "scripts": {
+    "regression": "npx playwright test",
+    "webTests": "npx playwright test --grep @Web",
+    "APITests": "npx playwright test --grep @API",
+    "Newconfig": "npx playwright test --config playwright.config1.js"
+  },
   "dependencies": {
     "@cucumber/cucumber": "^13.2.1",
     "exceljs": "^3.4.0",

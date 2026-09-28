@@ -9,8 +9,8 @@ test("Api validation using put" , async function ({request})
            "password" : "password123"
         }
 
-    const response = await request.post("https://restful-booker.herokuapp.com/auth",{headers:{"Content-Type":
-        "application/json"},data:authdata})
+    const response = await request.post("https://restful-booker.herokuapp.com/auth",
+        {headers:{"Content-Type":"application/json"},data:authdata})
 
     const responsejson = await response.json()
     const authtoken = responsejson.token
@@ -30,8 +30,8 @@ test("Api validation using put" , async function ({request})
           }
 
 
-    const bookingresponse = await request.post("https://restful-booker.herokuapp.com/booking",{headers:{"Content-Type":
-        "application/json"},data:bookingdata})
+    const bookingresponse = await request.post("https://restful-booker.herokuapp.com/booking",
+        {headers:{"Content-Type":"application/json"},data:bookingdata})
 
     const bookingresponsejson = await bookingresponse.json()
     const bookingId = bookingresponsejson.bookingid

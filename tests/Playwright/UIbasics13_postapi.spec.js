@@ -1,6 +1,5 @@
 const {test,expect} = require ("@playwright/test")
 const { log } = require("node:console")
-const { request } = require("node:http")
 
 
 test("Testing post API with token and booking id" , async function ({request})
@@ -11,7 +10,8 @@ test("Testing post API with token and booking id" , async function ({request})
         }
   
     
-    const response = await request.post("https://restful-booker.herokuapp.com/auth",{headers:{"Content-Type":"application/json"},data:authdata})
+    const response = await request.post("https://restful-booker.herokuapp.com/auth",
+        {headers:{"Content-Type":"application/json"},data:authdata})
 
     console.log(await response.status())
     console.log(await response.json())
