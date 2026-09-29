@@ -1,6 +1,6 @@
 const {test,expect} = require("@playwright/test")
 
-test.use({viewport:{width:1370,height:780}})//this change is for this test case only 
+test.use({viewport:{width:1570,height:780}})//this change is for this test case only 
 
 test("Change the screeen size", async({page}) =>
 {

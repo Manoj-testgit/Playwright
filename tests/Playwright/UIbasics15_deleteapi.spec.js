@@ -63,7 +63,7 @@ test("API testing using delete" , async ({request}) =>
 
         console.log(getresponse.status())
 
-        expect(deleterespone.status()).toBe(404)
+        expect(getresponse.status()).toBe(404)
 
         console.log(getresponse.statusText())
 
